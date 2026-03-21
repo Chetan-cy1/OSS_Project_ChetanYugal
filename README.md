@@ -1,4 +1,4 @@
-# OSS Capstone Project — The Open Source Audit
+# OSS Capstone Project - The Open Source Audit
 
 **Name:** Chetan Yugal  
 **Reg No:** 24BSA10093  
