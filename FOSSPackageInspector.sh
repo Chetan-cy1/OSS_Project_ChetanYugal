@@ -9,7 +9,7 @@ echo "=========================================="
 echo "Checking package: $PACKAGE"
 echo "------------------------------------------"
 
-# ✅ FIX: Proper cross-platform check (NOT only brew)
+# Proper cross-platform check (NOT only brew)
 if command -v "$PACKAGE" >/dev/null 2>&1; then
     echo "[SUCCESS] $PACKAGE is installed."
     echo ""
