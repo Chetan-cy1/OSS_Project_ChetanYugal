@@ -1,10 +1,10 @@
 # OSS Capstone Project — The Open Source Audit
 
-**Name:** Chetan Yugal
-**Reg No:** 24BSA10093
-**Slot:** F11
-**Course:** Open Source Software
-**College:** VIT Bhopal University
+**Name:** Chetan Yugal  
+**Reg No:** 24BSA10093  
+**Slot:** F11  
+**Course:** Open Source Software  
+**College:** VIT Bhopal University  
 
 ---
 
