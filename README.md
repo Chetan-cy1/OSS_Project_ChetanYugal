@@ -9,14 +9,20 @@
 ---
 
 ## Software I Chose
-**Git**
-- Category: Version Control
-- License: GPL v2
-- Made by Linus Torvalds in 2005
 
-I chose Git because I already use it daily and wanted to understand
-it better — not just the commands but where it came from and why
-it works the way it does.
+**Git**
+
+- Category: Version Control  
+- License: GPL v2  
+- Developed by Linus Torvalds in 2005  
+
+I chose Git mainly because I already use it in my daily work.  
+But honestly, before this project I was just using commands without
+really knowing what’s happening behind the scenes.
+
+So I thought this is a good chance to understand it better — how it
+actually works, why it was created, and why it became so important
+in open source.
 
 ---
 
@@ -34,51 +40,60 @@ it works the way it does.
 
 ## How to Run the Scripts
 
-First make them executable:
+First, make all scripts executable:
+
 ```bash
 chmod +x SystemIdentityReport.sh
 chmod +x FOSSPackageInspector.sh
 chmod +x PermissionAuditor.sh
 chmod +x LogFile.sh
 chmod +x Manifesto.sh
-```
+
+
 
 **Script 1**
 ```bash
 ./SystemIdentityReport.sh
 ```
-Shows a welcome screen with your OS, kernel, username, uptime and
-Git license info.
+This shows a kind of welcome screen with system details like OS,
+kernel version, username, uptime, and some Git-related info.
 
 **Script 2**
 ```bash
 ./FOSSPackageInspector.sh
 ./FOSSPackageInspector.sh git
 ```
-Pass any package name or leave blank — defaults to git.
-Shows if it's installed, version, location, and a philosophy note.
+You can pass any package name or leave it blank (it takes git by default).
+It checks if the package is installed, shows version and location,
+and also prints a small open source note.
 
 **Script 3**
 ```bash
 ./PermissionAuditor.sh
 ```
-Goes through directories like /etc, /var/log, /usr/bin and shows
-who owns them and how big they are. Also checks for .gitconfig.
+This script checks important system directories like /etc, /var/log,
+/usr/bin and shows:
+	•	who owns them
+	•	their permissions
+	•	their size
+
+It also checks if .gitconfig exists in your system.
 
 **Script 4**
 ```bash
 ./LogFile.sh
 ./LogFile.sh /var/log/system.log error
 ```
-Reads a log file line by line and counts keyword matches.
-Shows the last 5 lines that matched.
+Reads a log file line by line and counts how many times a keyword appears.
+Also prints the last few matching lines so you can quickly see the result.
 
 **Script 5**
 ```bash
 ./Manifesto.sh
 ```
-Asks you 3 questions interactively and saves your personal open
-source manifesto to a .txt file.
+This one is interactive.
+It simply asks 3 simple questions and then generates your personal open
+source manifesto in a .txt file.
 
 ---
 
