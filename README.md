@@ -1,95 +1,100 @@
-OSS Capstone Project-- the Open Source Audit.
+# OSS Capstone Project — The Open Source Audit
 
-Name: Chetan Yugal  
-Reg No: 24BSA10093  
-Slot: F11  
-Course: Open Source Software  
-College: VIT Bhopal University.  
+**Name:** Chetan Yugal  
+**Reg No:** 24BSA10093  
+**Slot:** F11  
+**Course:** Open Source Software  
+**College:** VIT Bhopal University  
 
-Software I Chose
+---
 
-Git
+## Software I Chose
+**Git**
+- Category: Version Control
+- License: GPL v2
+- Made by Linus Torvalds in 2005
 
-Category: Version Control  
-License: GPL v2  
-The developed kernel by Linus Torvalds in 2005.  
+I chose Git because I already am using it in my daily life and wanted to understand
+it better, not just the commands but where it came from and why it works the way it does.
 
-My primary choice of using Git was due to its usage in my work daily.  
-Nevertheless, ID tells the truth, I was merely following the instructions before this project.
-actually being acquainted with what is going on in the backgrounds.
+---
 
-and so I reckoned this would be a good opportunity of learning more about it--how it
-why it actually works, why it came into existence and why it became this significant.
-in open source.
+## What's in This Repo
 
-What's in This Repo
+| File | What it does |
+|------|-------------|
+| `SystemIdentityReport.sh` | Shows system's information like kernel, user, uptime |
+| `FOSSPackageInspector.sh` | Checks if a package is installed properly and shows details |
+| `PermissionAuditor.sh` | Shows permissions and size of key directories |
+| `LogFile.sh` | Counts how many times a heyword appears in a log file |
+| `Manifesto.sh` | Asks 3 simple questions and generates your open source statement |
 
-  File   What it does  
+---
 
-  See SystemIdentityReport.sh Documentation.sh Website.  
-  FOSSPackageInspector.sh - Realizes whether the package is in place and it displays its information.  
-  PermissionAuditor.sh   Displays access and capacity of searchable directories.  
-  LogFile.sh Systems the number of times a key-word is repeated in a log file.  
-  Manifesto.sh   Answer 3 questions and create your open source statement.  
+## How to Run the Scripts
 
-How to Run the Scripts
-
-To begin with, be able to make all scripts executable:
-
-SystemIdentityReport.sh chmod +x SystemIdentityReport.sh
-FOSSPackageInspector.sh admin.sh chmod +x FOSSPackageInspector.sh.sh chmod +x FOSSPackageInspector.sh.sh admin.sh chmod +x FOSSPackageInspector.sh.sh.sh chmod +x FOSSPackageInspector.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.sh.
-PermissionAuditor.sh was given chmod +x.
+First make them executable:
+```bash
+chmod +x SystemIdentityReport.sh
+chmod +x FOSSPackageInspector.sh
+chmod +x PermissionAuditor.sh
 chmod +x LogFile.sh
 chmod +x Manifesto.sh
+```
 
-Script 1bash
+**Script 1**
+```bash
 ./SystemIdentityReport.sh
-This is a welcome screen with details of the system such as OS.
-version of kernel, name, uptime, and a part of Git-related information.
+```
+Shows you a welcome screen with your OS, kernel, username, uptime and
+Git license information.
 
-Script 2bash
+**Script 2**
+```bash
 ./FOSSPackageInspector.sh
 ./FOSSPackageInspector.sh git
-Any package name can be passed or it can be left as a default (it puts git by default).
-It determines whether the package has been installed or not, displaying the version and locality.
-and also includes an open source note.
+```
+Pass any package name or leave blank defaults to git.
+Shows if it is installed, version, location, and a philosophy note.
 
-Script 3bash
+**Script 3**
+```bash
 ./PermissionAuditor.sh
-This script scans popular directories of the system such as; /etc, /var/log etc.
-/usr/bin and shows:
-		who owns them
-		their permissions
-	*	their size
+```
+Goes through directories like /etc, /var/log, /usr/bin and shows
+who owns them and how big are they. Also checks for .gitconfig.
 
-It also verifies whether or not you have.gitconfig in your computer.
-
-Script 4bash
+**Script 4**
+```bash
 ./LogFile.sh
-```./LogFile.sh /var/log/system.log error
-|human|>Desmond is an independent automotive breaker manufacturer.<|human|>Desmond is a breaker tire manufacturer that is independent.
-Reads log file one line at the time and counts the frequency of occurrence of a keyword.
-and also writes the last few matching lines so you can very soon see the effect.
+./LogFile.sh /var/log/system.log error
+```
+Reads a log file line by line and counts the keyword matches.
+Shows the last 5 lines that have matched.
 
-Script 5bash
+**Script 5**
+```bash
 ./Manifesto.sh
-`
-This one is interactive.
-It will just take 3 questions that are not complicated and then create your own open.
-the manifesto of the source in a.txt file.
+```
+Asks you 3 simple questions interactively and saves your personal open
+source manifesto to a .txt file.
 
-Requirements
+---
 
-Paint or any other Linux-written legacy system or any macOS Terminal.
------- git installed d – brew install git in Mac.
-Bash shell belongs to the set of shells of shell installer
+## Requirements
 
-References
+- macOS Terminal or any Linux system
+- Git installed — `brew install git` on Mac
+- Bash shell (comes pre-installed)
 
-gnu.org/philosophy/free-sw.html
-git-scm.com/book
-opensource.org/osd
-catb.org/~esr/writings/cathedral-bazaar
-survey.stackoverflow.co/2023
-spdx.org/licenses/GPL-2.0-only.html
-github.com/git/git
+---
+
+## References
+
+- gnu.org/philosophy/free-sw.html
+- git-scm.com/book
+- opensource.org/osd
+- catb.org/~esr/writings/cathedral-bazaar
+- survey.stackoverflow.co/2023
+- spdx.org/licenses/GPL-2.0-only.html
+- github.com/git/git
