@@ -1,42 +1,40 @@
-# OSS_Project_ChetanYugal
-A Capstone Project For Open Source Software_VITyarthi
-# The Open Source Audit — Git
-**Course:** Open Source Software (OSS NGMC)
-**Student:** Chetan Yugal
-**Registration Number:** 24BSA10093
+# OSS Capstone Project — The Open Source Audit
+
+**Name:** Chetan Yugal
+**Reg No:** 24BSA10093
 **Slot:** F11
-**Institution:** VIT Bhopal University
+**Course:** Open Source Software
+**College:** VIT Bhopal University
 
 ---
 
-## Chosen Software
-**Git** — Distributed Version Control System
-**License:** GNU General Public License v2 (GPL v2)
-**Created:** 2005 by Linus Torvalds
+## Software I Chose
+**Git**
+- Category: Version Control
+- License: GPL v2
+- Made by Linus Torvalds in 2005
+
+I chose Git because I already use it daily and wanted to understand
+it better — not just the commands but where it came from and why
+it works the way it does.
 
 ---
 
-## Repository Contents
+## What's in This Repo
 
-| File | Description |
+| File | What it does |
 |------|-------------|
-| `SystemIdentityReport.sh` | Script 1 — Displays live system info as a welcome screen |
-| `FOSSPackageInspector.sh` | Script 2 — Checks if a FOSS package is installed and prints a philosophy note |
-| `PermissionAuditor.sh` | Script 3 — Audits key system directories for permissions and disk usage |
-| `LogFile.sh` | Script 4 — Reads a log file line by line and counts keyword matches |
-| `Manifesto.sh` | Script 5 — Interactively generates a personal open source manifesto |
-| `README.md` | This file |
+| `SystemIdentityReport.sh` | Shows system info like kernel, user, uptime |
+| `FOSSPackageInspector.sh` | Checks if a package is installed and shows details |
+| `PermissionAuditor.sh` | Shows permissions and size of key directories |
+| `LogFile.sh` | Counts how many times a keyword appears in a log file |
+| `Manifesto.sh` | Asks 3 questions and generates your open source statement |
 
 ---
 
-## How to Run Each Script
+## How to Run the Scripts
 
-### Prerequisites
-- macOS with Terminal or any Linux system
-- Git installed (`brew install git` on macOS)
-- Bash shell
-
-### Setup — make all scripts executable
+First make them executable:
 ```bash
 chmod +x SystemIdentityReport.sh
 chmod +x FOSSPackageInspector.sh
@@ -45,85 +43,59 @@ chmod +x LogFile.sh
 chmod +x Manifesto.sh
 ```
 
-### Script 1 — System Identity Report
+**Script 1**
 ```bash
 ./SystemIdentityReport.sh
 ```
-Displays a formatted welcome screen showing OS, kernel version,
-hostname, user, home directory, uptime, date/time, and license info.
+Shows a welcome screen with your OS, kernel, username, uptime and
+Git license info.
 
-### Script 2 — FOSS Package Inspector
+**Script 2**
 ```bash
 ./FOSSPackageInspector.sh
-# or pass a package name:
 ./FOSSPackageInspector.sh git
 ```
-Checks if the given package is installed, shows version and
-location, and prints an open source philosophy note.
+Pass any package name or leave blank — defaults to git.
+Shows if it's installed, version, location, and a philosophy note.
 
-### Script 3 — Disk and Permission Auditor
+**Script 3**
 ```bash
 ./PermissionAuditor.sh
 ```
-Loops through key system directories and reports permissions,
-ownership, and disk usage. Also checks for Git global config.
+Goes through directories like /etc, /var/log, /usr/bin and shows
+who owns them and how big they are. Also checks for .gitconfig.
 
-### Script 4 — Log File Analyzer
+**Script 4**
 ```bash
 ./LogFile.sh
-# or pass a custom log file and keyword:
 ./LogFile.sh /var/log/system.log error
 ```
-Reads a log file line by line, counts how many lines contain
-the keyword, and displays the last 5 matching lines.
+Reads a log file line by line and counts keyword matches.
+Shows the last 5 lines that matched.
 
-### Script 5 — Open Source Manifesto Generator
+**Script 5**
 ```bash
 ./Manifesto.sh
 ```
-Asks three interactive questions and generates a personalised
-open source philosophy statement saved to a .txt file.
+Asks you 3 questions interactively and saves your personal open
+source manifesto to a .txt file.
 
 ---
 
-## Dependencies
+## Requirements
 
-| Tool | Purpose | Install |
-|------|---------|---------|
-| `bash` | Shell interpreter | Pre-installed on macOS/Linux |
-| `git` | Chosen software | `brew install git` |
-| `brew` | Package manager (macOS) | brew.sh |
-| `awk` | Text processing in scripts | Pre-installed |
-| `grep` | Pattern matching in scripts | Pre-installed |
-
----
-
-## Project Report
-The full project report PDF is submitted separately on the
-VITyarthi portal as per submission requirements.
+- macOS Terminal or any Linux system
+- Git installed — `brew install git` on Mac
+- Bash shell (comes pre-installed)
 
 ---
 
 ## References
-- GNU Project — Free Software Definition: gnu.org/philosophy/free-sw.html
-- Pro Git Book: git-scm.com/book
-- Open Source Initiative: opensource.org/osd
-- The Cathedral and the Bazaar: catb.org/~esr/writings/cathedral-bazaar
-- Stack Overflow Developer Survey 2023: survey.stackoverflow.co/2023
-```
 
----
-
-## Step 4 — Commit the README
-
-Scroll down → commit message:
-`Add README with script documentation and run instructions`
-→ Click **Commit changes**
-
----
-
-## Step 5 — Get Your Submission Link
-
-Your repo URL will be:
-```
-https://github.com/YOURUSERNAME/oss-audit-24BSA10093
+- gnu.org/philosophy/free-sw.html
+- git-scm.com/book
+- opensource.org/osd
+- catb.org/~esr/writings/cathedral-bazaar
+- survey.stackoverflow.co/2023
+- spdx.org/licenses/GPL-2.0-only.html
+- github.com/git/git
