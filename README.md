@@ -1,33 +1,32 @@
-# OSS Capstone Project - The Open Source Audit
+# OSS Capstone Project: The Open Source Audit
 
-**Name:** Chetan Yugal  
+**Name-** Chetan Yugal  
 **Reg No:** 24BSA10093  
-**Slot:** F11  
-**Course:** Open Source Software  
-**College:** VIT Bhopal University  
+**Slot-** F11  
+**Course-** Open Source Software  
+**College-** VIT Bhopal University 
 
 ---
 
-## Software I Chose
+## Software I Choose
 **Git**
 - Category: Version Control
 - License: GPL v2
 - Made by Linus Torvalds in 2005
 
-I chose Git because I already am using it in my daily life and wanted to understand
-it better, not just the commands but where it came from and why it works the way it does.
+I have selected Git since I already use it in my life and I wanted to learn more about it, not only the syntax but also the origin and the way it functions as it does.
 
 ---
 
 ## What's in This Repo
 
-| File | What it does |
+| File | What It Does |
 |------|-------------|
-| `SystemIdentityReport.sh` | Shows system's information like kernel, user, uptime |
-| `FOSSPackageInspector.sh` | Checks if a package is installed properly and shows details |
-| `PermissionAuditor.sh` | Shows permissions and size of key directories |
-| `LogFile.sh` | Counts how many times a heyword appears in a log file |
-| `Manifesto.sh` | Asks 3 simple questions and generates your open source statement |
+| `SystemIdentityReport.sh` | Displays information about the kernel, user, and uptime of system |
+| `FOSSPackageInspector.sh` | Report Answers the question whether a package is installed correctly and provides the information |
+| `PermissionAuditor.sh` | Designates grants and sizes of key directories |
+| `LogFile.sh` | Determines the number of times that a heyword is repeated in a log file |
+| `Manifesto.sh` | Prompts you to answer 3 easy questions and comes up with your open source statement |
 
 ---
 
@@ -46,44 +45,46 @@ chmod +x Manifesto.sh
 ```bash
 ./SystemIdentityReport.sh
 ```
-Shows you a welcome screen with your OS, kernel, username, uptime and
-Git license information.
+Displays a welcome page with your OS, kernel version, your username, time up and license details of Git.
 
 **Script 2**
 ```bash
 ./FOSSPackageInspector.sh
 ./FOSSPackageInspector.sh git
 ```
-Pass any package name or leave blank defaults to git.
-Shows if it is installed, version, location, and a philosophy note.
+Any package name may be passed or can be left blank which default to git.  
+Indicates whether or not it is in place, and version and whereabouts with a philosophy note.
+
 
 **Script 3**
 ```bash
 ./PermissionAuditor.sh
 ```
-Goes through directories like /etc, /var/log, /usr/bin and shows
-who owns them and how big are they. Also checks for .gitconfig.
+Browses in directories, such as /etc, /var/log, /usr/bin and displays the owner and size of them.  
+Also checks for .gitconfig.
+
 
 **Script 4**
 ```bash
 ./LogFile.sh
 ./LogFile.sh /var/log/system.log error
 ```
-Reads a log file line by line and counts the keyword matches.
-Shows the last 5 lines that have matched.
+Processes a line of a log file and counts the number of matches of the key word.   
+Sees the previous 5 lines which there are a replica.
+
 
 **Script 5**
 ```bash
 ./Manifesto.sh
 ```
-Asks you 3 simple questions interactively and saves your personal open
-source manifesto to a .txt file.
+Goes through the 3 questions and personal open source manifesto using interactive question and answer.  
+Also stores your personal open source manifesto as a personal file.
 
 ---
 
 ## Requirements
 
-- macOS Terminal or any Linux system
+- MacOS Terminal or any Linux based operating system.
 - Git installed — `brew install git` on Mac
 - Bash shell (comes pre-installed)
 
