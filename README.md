@@ -1,10 +1,10 @@
 # OSS Capstone Project: The Open Source Audit
 
-**Name-** Chetan Yugal  
+**Name:** Chetan Yugal  
 **Reg No:** 24BSA10093  
-**Slot-** F11  
-**Course-** Open Source Software  
-**College-** VIT Bhopal University 
+**Slot:** F11  
+**Course:** Open Source Software  
+**College:** VIT Bhopal University 
 
 ---
 
@@ -18,7 +18,7 @@ I have selected Git since I already use it in my life and I wanted to learn more
 
 ---
 
-## What's in This Repo
+## What's In This Repo
 
 | File | What It Does |
 |------|-------------|
